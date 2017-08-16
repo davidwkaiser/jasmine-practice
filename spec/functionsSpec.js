@@ -1,16 +1,13 @@
-xdescribe('functions', function () {
+describe("Text interpolation and matching", function(){
+  it("confirms that text is assembled", function(){
+    expect(addText("abc")).toEqual("abc this is the new part: blah blah & 321")
+  })
 
-  beforeEach(function () {
-    jasmine.addMatchers({
-      toBeDivisibleByTwo: function () {
-        return (value % 2) === 0;
-      }
-    });
-  });
+  it("checks matching", function(){
+    expect(addText("abc")).toMatch("321")
+  })
 
-  it('is divisible by 2', function () {
-    console.log(3);
-    expect(3).toBeDivisibleByTwo();
-  });
-
-});
+  it("checks matching", function(){
+    expect(addText('abc')).not.toMatch("456")
+  })
+})
