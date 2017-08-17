@@ -7,7 +7,15 @@ describe("Text interpolation and matching", function(){
     expect(addText("abc")).toMatch("321")
   })
 
-  it("checks matching", function(){
+  it("checks not matching", function(){
     expect(addText('abc')).not.toMatch("456")
+  })
+
+  it("checks matching with regex", function(){
+    expect(addText('abc')).toMatch(/321/)
+  })
+
+  it("checks not matching with regex", function(){
+    expect(addText('abc')).not.toMatch(/456/)
   })
 })
