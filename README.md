@@ -1,1 +1,3 @@
 # jasmine-practice
+
+practicing Jasmine and TDD. Nothing to see here...
