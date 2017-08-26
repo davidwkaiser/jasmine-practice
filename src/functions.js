@@ -5,3 +5,19 @@ function addText(text1){
   return text1 + sumText
   return text1
 }
+
+function returnNull(){
+  return null
+}
+
+function returnTrue(){
+  return true
+}
+
+function returnZero(){
+  return 0
+}
+
+function returnOne(){
+  return 1
+}
